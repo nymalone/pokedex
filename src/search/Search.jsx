@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from "react";
-import PokemonSearch from "../pokemon/PokemonSearch";
+
 
 class Search extends Component {
   constructor(props) {
