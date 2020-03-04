@@ -34,7 +34,9 @@ class PokemonList extends Component {
             ))}
           </div>
         ) : (
-          <h1> Loading Pokémons...</h1>
+          <>
+          <h3 style={{color: "white"}}> Loading... </h3>
+          </>
         )}
       </>
     );
