@@ -35,15 +35,15 @@ class Home extends Component {
               <div id="buttontopPicture2"></div>
             </div>
             <div id="picture">
-               <Link to={"Dashboard"}>
-              <img
-                className="start"
-                src="https://fontmeme.com/permalink/200303/5d8239416aa5778180072a46a31c57ba.png"
-                alt="pokemon-font"
-                border="0"
-                 width="170"
-              />
-            </Link>
+              <Link to={"Dashboard"}>
+                <img
+                  className="start"
+                  src="https://fontmeme.com/permalink/200303/5d8239416aa5778180072a46a31c57ba.png"
+                  alt="pokemon-font"
+                  border="0"
+                  width="170"
+                />
+              </Link>
             </div>
             <div id="buttonbottomPicture"></div>
             <div id="speakers">

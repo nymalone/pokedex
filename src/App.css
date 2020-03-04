@@ -1014,12 +1014,17 @@
 	div#pokedex
 	{
 		margin: 110px auto 0 auto;
+	
 	}
 
 
 	div#junction
 	{
 		display: none;
+	}
+
+	.navbar-brand {
+		margin-left: 28%;
 	}
 }
 

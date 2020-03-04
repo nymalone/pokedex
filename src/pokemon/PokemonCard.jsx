@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import styled from "styled-components";
 
-import spinner from '../components/spinner.gif';
+import spinner from "../components/spinner.gif";
 
 const Sprite = styled.img`
   width: 6em;
@@ -30,8 +30,8 @@ const Card = styled.div`
   &:hover::after {
     opacity: 1;
   }
-  color: rgb(249,202,51);
-  -webkit-text-stroke: 1.3px #3A5E97;
+  color: rgb(249, 202, 51);
+  -webkit-text-stroke: 1.3px #3a5e97;
 `;
 
 const StyledLink = styled(Link)`
@@ -54,7 +54,7 @@ class PokemonCard extends Component {
       name: "",
       imageUrl: "",
       pokemonIndex: "",
-      imageLoading: true,
+      imageLoading: true
     };
   }
   componentDidMount() {
@@ -78,7 +78,7 @@ class PokemonCard extends Component {
             {this.state.imageLoading ? (
               <img
                 src={spinner}
-                style={{ width: '3em', height: '3em' }}
+                style={{ width: "3em", height: "3em" }}
                 className="card-img-top rounded mx-auto d-block mt-3"
               />
             ) : null}

@@ -9,7 +9,7 @@ class PokemonList extends Component {
     super(props);
     this.state = {
       url: "https://pokeapi.co/api/v2/pokemon/?offset=0&limit=100",
-      pokemon: null,  
+      pokemon: "",  
     };
      this.searchPokemon = this.searchPokemon.bind(this);
   }
@@ -20,9 +20,7 @@ class PokemonList extends Component {
   }
 
   searchPokemon(searchValue){
-      console.log(searchValue.search)
       const pokemonSearch = this.state.pokemon.filter((el) => el.name.toLowerCase().includes(searchValue.search.toLowerCase()));
-      console.log(pokemonSearch);
       this.setState({
         pokemon: pokemonSearch
       })

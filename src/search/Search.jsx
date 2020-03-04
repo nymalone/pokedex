@@ -20,7 +20,7 @@ class Search extends Component {
       <div>
         <form className="field">
           <input
-          placeholder="Search for Pokémon name"
+          placeholder="Search..."
           style={{
               backgroundColor: 'white transparent',
               height: '1.6em',
