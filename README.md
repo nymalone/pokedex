@@ -1,7 +1,7 @@
-# <h1 align="center"> PoKéDasa </h1>
-<p align="center"> Online Pokédex where you can search for Pokémons and learn averything about them! </p>
+# PoKéDasa
+Online Pokédex where you can search for Pokémons and learn averything about them! </p>
 
-### <p align="center"> [Check the site here](http://pokedasa.netlify.com/) </p>
+#### [Check the site here](http://pokedasa.netlify.com/) 
 
 ![Screen Shot 2020-03-04 at 14 54 36](https://user-images.githubusercontent.com/54912285/75908238-8289e780-5e28-11ea-92ab-bb447f598c4f.png)
 
