@@ -35,11 +35,15 @@ class Home extends Component {
               <div id="buttontopPicture2"></div>
             </div>
             <div id="picture">
+               <Link to={"Dashboard"}>
               <img
-                src="http://www.fbcnewton.org/uploads/1/1/7/6/11765207/pikachu_orig.png"
-                alt="pykachu"
-                height="167"
+                className="start"
+                src="https://fontmeme.com/permalink/200303/5d8239416aa5778180072a46a31c57ba.png"
+                alt="pokemon-font"
+                border="0"
+                 width="170"
               />
+            </Link>
             </div>
             <div id="buttonbottomPicture"></div>
             <div id="speakers">
@@ -69,43 +73,6 @@ class Home extends Component {
               <div id="downT"></div>
             </div>
           </div>
-        </div>
-        <div id="right">
-          <div id="stats">
-            <Link to={"Dashboard"}>
-              <img
-                className="start"
-                src="https://fontmeme.com/permalink/200303/5d8239416aa5778180072a46a31c57ba.png"
-                alt="pokemon-font"
-                border="0"
-                 width="170"
-              />
-            </Link>
-          </div>
-          <div id="blueButtons1">
-            <div className="blueButton"></div>
-            <div className="blueButton"></div>
-            <div className="blueButton"></div>
-            <div className="blueButton"></div>
-            <div className="blueButton"></div>
-          </div>
-          <div id="blueButtons2">
-            <div className="blueButton"></div>
-            <div className="blueButton"></div>
-            <div className="blueButton"></div>
-            <div className="blueButton"></div>
-            <div className="blueButton"></div>
-          </div>
-          <div id="miniButtonGlass4"></div>
-          <div id="miniButtonGlass5"></div>
-          <div id="barbutton3"></div>
-          <div id="barbutton4"></div>
-          <div id="yellowBox1"></div>
-          <div id="yellowBox2"></div>
-          <div id="bg_curve1_right"></div>
-          <div id="bg_curve2_right"></div>
-          <div id="curve1_right"></div>
-          <div id="curve2_right"></div>
         </div>
       </div>
     );
