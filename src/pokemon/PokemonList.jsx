@@ -9,8 +9,9 @@ class PokemonList extends Component {
     super(props);
     this.state = {
       url: "https://pokeapi.co/api/v2/pokemon/?offset=0&limit=100",
-      pokemon: null,    
+      pokemon: null,  
     };
+     this.searchPokemon = this.searchPokemon.bind(this);
   }
 
   async componentDidMount() {
@@ -18,13 +19,24 @@ class PokemonList extends Component {
     this.setState({ pokemon: res.data["results"] });
   }
 
+  searchPokemon(searchValue){
+      console.log(searchValue.search)
+      const pokemonSearch = this.state.pokemon.filter((el) => el.name.toLowerCase().includes(searchValue.search.toLowerCase()));
+      console.log(pokemonSearch);
+      this.setState({
+        pokemon: pokemonSearch
+      })
+    }
+
   render() {
     return (
       <>
         
+         <Search search={this.searchPokemon}/>
+         <br />
+         <br />
         {this.state.pokemon ? (
           <div className="row">
-         
             {this.state.pokemon.map(pokemon => (
               <PokemonCard 
                key={pokemon.name}

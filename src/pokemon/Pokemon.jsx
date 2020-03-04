@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from 'react-router-dom'
 import axios from "axios";
 
 const TYPE_COLORS = {
@@ -449,6 +450,7 @@ class Pokemon extends Component {
          
         </div>
       </div>
+     
           </div>
     );
   }
