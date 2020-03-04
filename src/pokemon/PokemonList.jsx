@@ -10,19 +10,24 @@ class PokemonList extends Component {
     this.state = {
       url: "https://pokeapi.co/api/v2/pokemon/?offset=0&limit=100",
       pokemon: "",  
+      filteredPokemon: []
     };
      this.searchPokemon = this.searchPokemon.bind(this);
   }
 
   async componentDidMount() {
     const res = await axios.get(this.state.url);
-    this.setState({ pokemon: res.data["results"] });
+    this.setState({ 
+      pokemon: res.data["results"],
+      filteredPokemon: res.data["results"]
+      
+      });
   }
 
   searchPokemon(searchValue){
       const pokemonSearch = this.state.pokemon.filter((el) => el.name.toLowerCase().includes(searchValue.search.toLowerCase()));
       this.setState({
-        pokemon: pokemonSearch
+        filteredPokemon: pokemonSearch
       })
     }
 
@@ -35,7 +40,7 @@ class PokemonList extends Component {
          <br />
         {this.state.pokemon ? (
           <div className="row">
-            {this.state.pokemon.map(pokemon => (
+            {this.state.filteredPokemon.map(pokemon => (
               <PokemonCard 
                key={pokemon.name}
                name={pokemon.name}
